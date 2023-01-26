@@ -38,7 +38,7 @@ rd /S /Q %appdata%\PikPak
 {userType:1,versionCode:"PC-Electron",versionName:"1.0.0"}
 ```
 
-> 搜索3 (替换最大同时下载数):
+> 搜索3 (替换最大同时下载数，太大无作用):
 
 ```text
 u=5
@@ -47,7 +47,7 @@ u=5
 > 替换3:
 
 ```text
-u=10000
+u=10
 ```
 
 3. 保存文件并运行`Clear.bat`
