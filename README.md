@@ -29,7 +29,7 @@ rd /S /Q %appdata%\PikPak
 > 搜索2 (注册获取3天会员):
 
 ```text
-{from:"web",source:T.tT.get().source}
+{from:"web",source:d.tT.get().source}
 ```
 
 > 替换2:
@@ -38,16 +38,18 @@ rd /S /Q %appdata%\PikPak
 {userType:1,versionCode:"PC-Electron",versionName:"1.0.0"}
 ```
 
-> 搜索3 (替换最大同时下载数，太大无作用):
+> 搜索3 (替换最大同时下载数1，太大无作用):
 
 ```text
-u=5,
+l=5;
 ```
 
 > 替换3:
 
 ```text
-u=10,
+l=10;
 ```
+
+
 
 3. 保存文件并运行`Clear.bat`
