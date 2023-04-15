@@ -11,7 +11,7 @@ rd /S /Q %public%\PikPak
 rd /S /Q %appdata%\PikPak
 ```
 
-## 方法 (版本 V1.3.3.2266)
+## 方法 (版本 V1.3.4.2302)
 
 1. 打开 `Pikpak\resources\app\out\main-renderer\main.js`
 2. > 搜索1 (跳过区域检测):
@@ -26,16 +26,16 @@ rd /S /Q %appdata%\PikPak
 (console.log("Bypassing area check..."))
 ```
 
-> 搜索2 (注册获取3天会员)(VSCode正则替换):
+> 搜索2 (注册获取5天会员)(VSCode正则替换):
 
 ```text
-\{from:"web",source:.\..\.get\(\).source\}
+\(0,([A-Za-z0-9]+\.[A-Za-z0-9]+)\)\(`\$\{([A-Za-z0-9]+\.[A-Za-z0-9]+)\}/activity/invite`,\{method:"POST",body:\{from:"web",source:([A-Za-z0-9]+\.[A-Za-z0-9]+)\.get\(\)\.source\},withCredentials:!0\}\)
 ```
 
 > 替换2:
 
 ```text
-{userType:1,versionCode:"PC-Electron",versionName:"1.0.0"}
+{(0,$1)(`${$2}/activity/invite`,{method:"POST",body:{from:"web",source:$3.get().source},withCredentials:!0,});(0,$1)(`${$2}/activity/rewardVip`,{method:"POST",body:{type:"install_web_pikpak_extension"},withCredentials:!0,});(0,$1)(`${$2}/activity/rewardVip`,{method:"POST",body:{type:"upload_file"},withCredentials:!0,})}
 ```
 
 > 搜索3 (替换最大同时下载数1，太大无作用)(VSCode正则替换):
