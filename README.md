@@ -11,7 +11,7 @@ rd /S /Q %public%\PikPak
 rd /S /Q %appdata%\PikPak
 ```
 
-## 方法 (版本 V1.5.2.2518)
+## 方法 (版本 V2.0.4.2633)
 
 1. 打开 `Pikpak\resources\app\out\main-renderer\main.xxxxxxxx.js` (xxxxxxxx为随机二进制数，如b9ceb61b)
 2. > 搜索1 (跳过区域检测):
