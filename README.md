@@ -11,7 +11,7 @@ rd /S /Q %public%\PikPak
 rd /S /Q %appdata%\PikPak
 ```
 
-## 方法 (版本 V2.0.4.2633)(可能适用于以后版本)
+## 方法 (版本 V2.2.3.2853)(可能适用于以后版本)
 
 1. 打开 `Pikpak\resources\app\out\main-renderer\main.xxxxxxxx.js` (xxxxxxxx为随机二进制数，如b9ceb61b)
 2. > 搜索1 (跳过区域检测):
@@ -26,7 +26,7 @@ rd /S /Q %appdata%\PikPak
 (console.log("Bypassing area check..."))
 ```
 
-> 搜索2 (注册获取4天会员)(VSCode正则替换):
+> 搜索2 (目前已失效，请直接使用我的邀请码在兑换码处兑换7天:`53034589`,或者注册2个账号互相兑换)(VSCode正则替换):
 
 ```text
 \(0,([A-Za-z0-9]+\.[A-Za-z0-9]+)\)\(`\$\{([A-Za-z0-9]+\.[A-Za-z0-9]+)\}/activity/invite`,\{method:"POST",body:\{source:([A-Za-z0-9]+\.[A-Za-z0-9]+)\.get\(\)\.source,apk_extra:\{invite_code:[A-Za-z0-9]+\.[A-Za-z0-9]+\.get\([A-Za-z0-9]+\.[A-Za-z0-9]+\.SPREAD_ID\)\|\|""\},tf:[A-Za-z0-9]+\.[A-Za-z0-9]+\.get\(\)\.source,rf:[A-Za-z0-9]+\.[A-Za-z0-9]+\.get\(\)\.join\(\)\|\|void 0\},withCredentials:!0\}\)
@@ -50,6 +50,4 @@ rd /S /Q %appdata%\PikPak
 ,$1=10,
 ```
 
-
-
-3. 保存文件并运行`Clear.bat`
+3.保存文件并运行`Clear.bat`
