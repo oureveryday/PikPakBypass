@@ -1,5 +1,7 @@
 # Pikpak Windows 桌面端 跳过区域限制方法
 
+* 可以使用邀请码兑换会员: `87359474`
+
 * `Clear.bat` : 清除所有用户数据
 
 ```text
@@ -26,7 +28,7 @@ rd /S /Q %appdata%\PikPak
 (console.log("Bypassing area check..."))
 ```
 
-> 搜索2 (目前已失效，请直接使用我的邀请码在兑换码处兑换7天:`53034589`,或者注册2个账号互相兑换，需使用outlook邮箱)(VSCode正则替换):
+> 搜索2 (目前已失效，请直接使用我的邀请码在兑换码处兑换7天:`87359474`,或者注册2个账号互相兑换，需使用outlook邮箱)(VSCode正则替换):
 
 ```text
 \(0,([A-Za-z0-9]+\.[A-Za-z0-9]+)\)\(`\$\{([A-Za-z0-9]+\.[A-Za-z0-9]+)\}/activity/invite`,\{method:"POST",body:\{source:([A-Za-z0-9]+\.[A-Za-z0-9]+)\.get\(\)\.source,apk_extra:\{invite_code:[A-Za-z0-9]+\.[A-Za-z0-9]+\.get\([A-Za-z0-9]+\.[A-Za-z0-9]+\.SPREAD_ID\)\|\|""\},tf:[A-Za-z0-9]+\.[A-Za-z0-9]+\.get\(\)\.source,rf:[A-Za-z0-9]+\.[A-Za-z0-9]+\.get\(\)\.join\(\)\|\|void 0\},withCredentials:!0\}\)
